@@ -22,5 +22,5 @@ for element in r2.json()["response"]["games"]:
 library_2 = Set(library_2)
 
 common_games = library_1.intersection(library_2)
-for element in common_games:
+for element in sorted(common_games):
     print element
